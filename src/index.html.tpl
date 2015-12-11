@@ -3,11 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>React Redux Scaffold</title>
+  <title>EntregueME</title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    h2 {
+      font-family: 'Roboto';
+      font-size: 18px;
+    }
+  </style>
+
 </head>
 <body>
   <div id="content">
-    <h1>If you can see this, something is broken (or JS is not enabled)!!.</h1>
+    <h2>
+      Liga o JavaScript, Kakaroto!
+    </h2>
   </div>
 
   <script>

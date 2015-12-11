@@ -1,13 +1,31 @@
 /* eslint react/self-closing-comp:0 */
 
 import React from 'react';
-import { Route } from 'react-router';
+import { IndexRoute, Route, Router } from 'react-router';
 
-import { IndexPage, TodosPage } from './pages';
+import {
+
+  NavPageWrapper,
+
+  HomePage,
+  CustomerCreateListPage,
+  CustomerListsPage,
+  CustomerProfilePage,
+
+  DeliveryHomePage
+
+} from './pages';
 
 export default (
-  <div>
-    <Route path="/" component={IndexPage}/>
-    <Route path="/todos" component={TodosPage}/>
-  </div>
+  <Router>
+    <Route path="/" component={NavPageWrapper}>
+      <IndexRoute component={HomePage} />
+      <Route path="new-list" component={CustomerCreateListPage} />
+      <Route path="lists" component={CustomerListsPage} />
+      <Route path="profile" component={CustomerProfilePage} />
+    </Route>
+    <Route path="/delivery" component={NavPageWrapper}>
+      <IndexRoute component={DeliveryHomePage} />
+    </Route>
+  </Router>
 );

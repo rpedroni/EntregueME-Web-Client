@@ -1,5 +1,7 @@
-export const ADD_TODO = 'ADD_TODO';
-export const TOGGLE_CHECKED = 'TOGGLE_CHECKED';
-export const DELETE_TODO = 'DELETE_TODO';
-export const SET_FILTER = 'SET_FILTER';
-export const CLEAR_TODO = 'CLEAR_TODO';
+// Model
+export const CREATE_LIST = 'CREATE_LIST';
+export const CREATE_ITEM = 'CREATE_ITEM';
+export const DELETE_ITEM = 'DELETE_ITEM';
+
+// UI
+export const CHANGE_CUSTOMER_LISTS = 'CHANGE_CUSTOMER_LISTS';
